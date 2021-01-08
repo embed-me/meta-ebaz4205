@@ -1,0 +1,2 @@
+# Template settings
+TEMPLATECONF=${TEMPLATECONF:-meta-ebaz4205/conf}
