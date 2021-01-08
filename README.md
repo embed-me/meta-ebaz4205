@@ -61,11 +61,11 @@ end up in the u-boot console.
 
 In order to identify boot issues, the following LED codes are.
 
-| LED red | LED green | Boot State | Description           |\
-|---------+-----------+------------+-----------------------|\
-| on      | on        |          0 | init/pwr up           |\
-| on      | off       |          1 | Bitstream config done |\
-| off     | on        |          2 | DDR load done         |\
+| LED red | LED green | Boot State | Description           |
+|:--------|:----------|-----------:|:----------------------|
+| on      | on        |          0 | init/pwr up           |
+| on      | off       |          1 | Bitstream config done |
+| off     | on        |          2 | DDR load done         |
 | off     | off       |          3 | -                     |
 
 ### Linux
@@ -85,8 +85,8 @@ the board without the use of the serial console.
 In order to identify that linux was booted as intended and
 the system is running, the green LED provides a heartbeat.
 
-| LED red | LED green | Boot State | Description |\
-|---------+-----------+------------+-------------|\
+| LED red | LED green | Boot State | Description |
+|:--------|:----------|-----------:|:------------|
 | off     | heartbeat |          0 | init done   |
 
 #### Mount Points
