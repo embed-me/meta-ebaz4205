@@ -10,4 +10,7 @@ IMAGE_BOOT_FILES += " \
                  ebaz4205-image-standard-${MACHINE}.cpio.gz.u-boot \
                  "
 
-do_rootfs[depends] += "ebaz4205-image-standard:do_rootfs"
+WKS_FILE_DEPENDS += "ebaz4205-image-standard"
+do_image_wic[depends] += "ebaz4205-image-standard:do_image_complete"
+
+IMAGE_ROOTFS_EXTRA_SPACE = "2000"
