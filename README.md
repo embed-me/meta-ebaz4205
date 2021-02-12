@@ -9,6 +9,12 @@ a linux system with basic BSP (Board Support Package).
 
 	Lukas Lichtl (admin@embed-me.com)
 
+## Hardware Support
+
+There seem to be two hardware versions currently sold, one with a
+PHY oscillator mounted and one where it is missing.
+This layer current supports both versions.
+
 ## Dependencies
 
 This layer depends on:
