@@ -7,7 +7,8 @@ def uenv_populate(d):
     env["kernel_image"] = d.getVar("KERNEL_IMAGETYPE")
     env["loadkernel"] = "load mmc 0 ${kernel_load_address} ${kernel_image}"
 
-    env["devicetree_image"] = boot_files_dtb_filepath(d)
+    # TODO: The previous xilinx-method did not work well, hardcode it for now...
+    env["devicetree_image"] = "ebaz4205-zynq7.dtb"
     env["loaddtb"] = "load mmc 0 ${devicetree_load_address} ${devicetree_image}"
 
     # TODO: Hardcoding, not nice. Is there any way to know the image that is currently build
