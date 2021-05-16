@@ -8,6 +8,7 @@ IMAGE_INSTALL += "\
         mtd-utils \
         devmem2 \
         strace \
+	uioctl \
         ldd \
         "
 
