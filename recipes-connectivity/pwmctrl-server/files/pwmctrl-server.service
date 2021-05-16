@@ -1,0 +1,14 @@
+[Unit]
+Description=Uvicorn ASGI Server to control PWM through sysfs
+Documentation=https://github.com/embed-me/meta-ebaz4205
+ConditionPathExists=/sys/class/pwm/pwmchip0
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=uvicorn --host 0.0.0.0 --app-dir /usr/bin pwmctrl-server:app
+RestartSec=10s
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
