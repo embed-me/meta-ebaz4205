@@ -1,4 +1,4 @@
 define KFEATURE_DESCRIPTION "Enable MTD, UBI"
-define KFEATURE_COMPATIBILITY board
+define KFEATURE_COMPATIBILITY all
 
 kconfig hardware mtd.cfg

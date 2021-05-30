@@ -1,0 +1,11 @@
+[Unit]
+Description=Xilinx Virtual Cable (XVC) Server
+
+[Service]
+Restart=always
+After=network-online.target
+Wants=network-online.target
+ExecStart=/usr/bin/xvc_server
+
+[Install]
+WantedBy=multi-user.target

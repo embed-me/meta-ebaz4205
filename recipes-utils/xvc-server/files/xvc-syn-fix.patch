@@ -1,0 +1,11 @@
+--- src/xvcServer_old.c	2021-05-30 07:42:35.097528577 +0000
++++ src/xvcServer.c	2021-05-30 07:42:55.296688336 +0000
+@@ -255,7 +255,7 @@
+       return 1;
+    }
+ 
+-   if (listen(s, 0) < 0) {
++   if (listen(s, 5) < 0) {
+       perror("listen");
+       return 1;
+    }
