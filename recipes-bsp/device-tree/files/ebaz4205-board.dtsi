@@ -1,6 +1,6 @@
 / {
         chosen {
-                bootargs = "console=ttyPS0,115200 earlyprintk root=/dev/mmcblk0p2 rw";
+                bootargs = "console=ttyPS0,115200 earlyprintk root=/dev/mmcblk0p2 rw uio_pdrv_genirq.of_id=generic-uio";
                 stdout-path = "serial0:115200n8";
         };
 
@@ -15,7 +15,7 @@
                 reg = <0x0 0x10000000>;
         };
 
-        leds {
+	leds {
                 compatible = "gpio-leds";
 
 		led-green {

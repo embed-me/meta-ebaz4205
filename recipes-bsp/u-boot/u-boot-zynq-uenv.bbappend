@@ -31,5 +31,5 @@ def uenv_populate(d):
     return env
 
 # bootargs, default to booting with the rootfs device being partition 2 of the first mmc device
-KERNEL_BOOTARGS_zynq = "earlyprintk console=ttyPS0,115200 root=/dev/mmcblk0p2 rw rootwait"
-KERNEL_BOOTARGS_zynqmp = "earlycon clk_ignore_unused root=/dev/mmcblk0p2 rw rootwait"
+KERNEL_BOOTARGS_zynq = "earlyprintk console=ttyPS0,115200 root=/dev/mmcblk0p2 rw rootwait uio_pdrv_genirq.of_id=generic-uio"
+KERNEL_BOOTARGS_zynqmp = "earlycon clk_ignore_unused root=/dev/mmcblk0p2 rw rootwait uio_pdrv_genirq.of_id=generic-uio"
